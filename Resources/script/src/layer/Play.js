@@ -445,7 +445,7 @@ var PlayScene = $.scene(function(){
             CardManage.removeCards();
             for(var name in node){
                 if (node[name] && node[name].getContentSize) {
-                    node[name].removeFromParent(true);
+                    node[name].removeFromParent && node[name].removeFromParent(true);
                     node[name] = null;
                 };
             }

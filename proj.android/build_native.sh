@@ -1,5 +1,5 @@
 #NDK_ROOT="/opt/android/android-ndk"
-APPNAME="CocosDragonJS"
+APPNAME="SetCard"
 
 # options
 

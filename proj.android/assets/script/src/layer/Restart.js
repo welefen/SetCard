@@ -86,7 +86,7 @@ var RestartScene = $.scene(function(){
             this._super();
             for(var name in node){
                 if (node[name] && node[name].getContentSize) {
-                    node[name].removeFromParent(true);
+                    node[name].removeFromParent && node[name].removeFromParent(true);
                     node[name] = null;
                 };
             }
