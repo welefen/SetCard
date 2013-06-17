@@ -255,6 +255,15 @@ var ListScene = $.scene(function(){
                 sprite.addChild(checked);
             };
             return sprite;
+        },
+        onExit: function(){
+            this._super();
+            for(var name in node){
+                if (node[name] && node[name].getContentSize) {
+                    node[name].removeFromParent(true);
+                    node[name] = null;
+                };
+            }
         }
     }
 })

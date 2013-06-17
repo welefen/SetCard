@@ -440,8 +440,15 @@ var PlayScene = $.scene(function(){
             child.addChild(s);
         },
         onExit: function(){
+            this._super();
             this.removeMiniCards();
             CardManage.removeCards();
+            for(var name in node){
+                if (node[name] && node[name].getContentSize) {
+                    node[name].removeFromParent(true);
+                    node[name] = null;
+                };
+            }
         }
     }
 });
