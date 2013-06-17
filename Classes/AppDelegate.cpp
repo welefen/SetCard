@@ -78,7 +78,7 @@ void handle_signal(int signal) {
             sc->start();
             internal_state = 1;
         } else {
-            sc->runScript("hello.js");
+            sc->runScript("boot-jsb.js");
             internal_state = 0;
         }
     }

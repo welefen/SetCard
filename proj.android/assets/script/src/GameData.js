@@ -37,7 +37,7 @@
                 }
             }
         },
-        levelCount: 30,
+        levelCount: 100,
         //下一关
         nextLevel: function(){
             var mode = this.getMode();
