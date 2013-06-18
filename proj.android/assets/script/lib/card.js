@@ -4,21 +4,51 @@
 var Card = function(){
 	var cardList = [];
 	var cardIndex = 0;
-	function generateList(num){
-		cardList = [];
-		cardIndex = 0;
-		num = num || 3;
-		var length = Math.pow(num, 4);
+	function generateList(num, add){
+		var length = num || 81;
 	    var arr = new Array(length);
 	    arr[0] = 0;
 	    for (var i=1; i<length; i++) {
 	        var rnd = Math.floor(Math.random()*(i+1));
 	        arr[i] = arr[rnd];
 	        arr[rnd] = i;
-	    }
-	    cardList = arr;
-	    cc.log(arr);
+	    };
+	    add = add | 0;
+	    if (add) {
+	    	return arr.map(function(item, i){
+	    		return item + add;
+	    	})
+	    };
 	    return arr;
+	}
+	function generateByMode(mode){
+		var items = {
+			"beginner": 18,
+			"easy": 30,
+			"medium": 45,
+			"hard": 60,
+			"expert": 81
+		};
+		var item = items[mode] || 81;
+		var total = 81;
+		var nums = Math.ceil(total / item);
+		var result = [];
+		for(var i = 0; i < nums; i++){
+			if (i == (nums - 1)) {
+				var list = generateList(total - i * item, i * item);
+			}else{
+				var list = generateList(item, i * item);
+			}
+			result.push(list);
+		}
+		result.sort(function(){
+			return Math.random() >= 0.5 ? 1 : -1;
+		})
+		var ret = [];
+		result.forEach(function(item){
+			ret.push.apply(ret, item);
+		})
+		return ret;
 	}
 	function getCard(){
 		if (cardIndex == cardList.length) {
@@ -100,6 +130,7 @@ var Card = function(){
 		},
 		getFileName: getFileName,
 		generateList: generateList,
+		generateByMode: generateByMode,
 		getCard: getCard,
 		getInfo: getInfo,
 		checkReduce: checkReduce

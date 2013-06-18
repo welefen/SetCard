@@ -23,9 +23,9 @@ var Card = function(){
 	}
 	function generateByMode(mode){
 		var items = {
-			"beginner": 6,
-			"easy": 15,
-			"medium": 30,
+			"beginner": 18,
+			"easy": 30,
+			"medium": 45,
 			"hard": 60,
 			"expert": 81
 		};

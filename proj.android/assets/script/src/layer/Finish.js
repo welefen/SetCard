@@ -41,14 +41,14 @@ var FinishScene = $.scene(function(){
                 return xingNum = 0;
             };
             var errNum = gameData.errNum;
-            var userHint = Math.max((gameData.totalTipNum || 0) - gameData.tipNum, 0);
-            if (errNum >= 5) {
+            var useHint = Math.max((gameData.totalTipNum || 0) - gameData.tipNum, 0);
+            if (errNum > 5) {
                 return xingNum = 0;
             };
-            if (errNum === 0) {
+            if (errNum < 2 && useHint <= 3) {
                 return xingNum = 3;
             };
-            if (errNum <= 2 && userHint <= 2) {
+            if (errNum <= 3 && useHint <= 5) {
                 return xingNum = 2;
             };
             return xingNum = 1;
