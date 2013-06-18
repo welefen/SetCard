@@ -441,6 +441,7 @@ var PlayScene = $.scene(function(){
         },
         onExit: function(){
             this._super();
+            this.storeData();
             this.removeMiniCards();
             CardManage.removeCards();
             for(var name in node){

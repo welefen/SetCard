@@ -1,6 +1,6 @@
 ;(function(){
-    var dirImg = "image/";
-    var dirAudio = "audio/";
+    var dirImg = "../image/";
+    var dirAudio = "../audio/";
     /**
      * 资源
      * @type {Object}
