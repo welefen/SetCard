@@ -73,8 +73,8 @@ var BaseScene = function(){
                     }
                     item.setNormalImage($.frameSprite(pic));
                 }, function(){
-                    //tip callback
-                    
+                    var scene = $.tranScene(HelpScene.scene());
+                    cc.Director.getInstance().pushScene(scene);
                 }],
                 position: [x || 0, y || 0],
                 marginLeft: 32,
@@ -112,6 +112,7 @@ var BaseScene = function(){
                 }
             });
             this.addChild(menu);
+            return menu;
         },
         getTimeString: function(time){
             var minute = Math.floor(time / 60);

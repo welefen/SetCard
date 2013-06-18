@@ -22,7 +22,6 @@ var FinishScene = $.scene(function(){
             this.initNav();
             this.initData();
             this.initMenuBtn();
-            this.saveData();
             $.setBackgroundMusic(R.audio_bg);
             return true;
         },
@@ -30,6 +29,10 @@ var FinishScene = $.scene(function(){
             var xing = this.getXingNum();
             var time = gameData.time;
             GameData.setFinishGame(mode, level, time, xing);
+        },
+        onEnter: function(){
+            this._super();
+            this.saveData();
         },
         //可以获取几个星
         //@TODO 具体的数值需要调整

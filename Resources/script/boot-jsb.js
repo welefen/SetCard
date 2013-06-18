@@ -45,6 +45,7 @@ var appFiles = [
     'src/layer/Paused.js',
     'src/layer/Restart.js',
     'src/layer/Finish.js',
+    'src/layer/Help.js',
 ];
 
 cc.dumpConfig();
