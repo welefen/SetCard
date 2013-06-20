@@ -16,6 +16,7 @@
         img_restart: dirImg + "restart.png",
         img_finish_bg: dirImg + "finish_bg.png",
         img_logo1: dirImg + "logo1.png",
+        img_help: dirImg + "help.png",
 
         img_cards: dirImg + "cards.png",
         img_btn: dirImg + "btn.png",

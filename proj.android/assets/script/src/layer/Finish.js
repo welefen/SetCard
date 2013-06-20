@@ -215,15 +215,6 @@ var FinishScene = $.scene(function(){
                 }
             });
             this.addChild(menu);
-        },
-        onExit: function(){
-            this._super();
-            for(var name in node){
-                if (node[name] && node[name].getContentSize) {
-                    node[name].removeFromParent && node[name].removeFromParent(true);
-                    node[name] = null;
-                };
-            }
         }
     }
 })

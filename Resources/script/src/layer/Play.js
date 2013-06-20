@@ -99,6 +99,7 @@ var PlayScene = $.scene(function(){
                     var cardId = Card.getCard();
                     if (cardId === false && !CardManage.hasClear()) {
                         if (i == 2) {
+                            instance.addReduceNum();
                             instance.gameFinish();
                         };
                         return true;
@@ -444,12 +445,6 @@ var PlayScene = $.scene(function(){
             this.storeData();
             this.removeMiniCards();
             CardManage.removeCards();
-            for(var name in node){
-                if (node[name] && node[name].getContentSize) {
-                    node[name].removeFromParent && node[name].removeFromParent(true);
-                    node[name] = null;
-                };
-            }
         }
     }
 });
