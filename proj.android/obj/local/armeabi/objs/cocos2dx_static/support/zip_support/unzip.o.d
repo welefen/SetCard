@@ -1,12 +1,13 @@
 obj/local/armeabi/objs/cocos2dx_static/support/zip_support/unzip.o: \
- /Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/support/zip_support/unzip.cpp \
+ /Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/support/zip_support/unzip.cpp \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/stdio.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
- /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/_types.h \
- /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/machine/_types.h \
+ /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/android/api-level.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/types.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/stdint.h \
+ /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/_types.h \
+ /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/machine/_types.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/linux/posix_types.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/linux/stddef.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/linux/compiler.h \
@@ -23,11 +24,11 @@ obj/local/armeabi/objs/cocos2dx_static/support/zip_support/unzip.o: \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/memory.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/zlib.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/zconf.h \
- /Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/support/zip_support/unzip.h \
- /Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/platform/android/CCPlatformDefine.h \
+ /Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/support/zip_support/unzip.h \
+ /Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/platform/android/CCPlatformDefine.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/android/log.h \
- /Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/support/zip_support/ioapi.h \
- /Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/platform/CCPlatformConfig.h \
+ /Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/support/zip_support/ioapi.h \
+ /Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/platform/CCPlatformConfig.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/errno.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/linux/errno.h \
  /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/asm/errno.h \
@@ -40,13 +41,15 @@ obj/local/armeabi/objs/cocos2dx_static/support/zip_support/unzip.o: \
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h:
 
-/Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/_types.h:
-
-/Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/machine/_types.h:
+/Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/android/api-level.h:
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/types.h:
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/stdint.h:
+
+/Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/sys/_types.h:
+
+/Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/machine/_types.h:
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/linux/posix_types.h:
 
@@ -80,15 +83,15 @@ obj/local/armeabi/objs/cocos2dx_static/support/zip_support/unzip.o: \
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/zconf.h:
 
-/Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/support/zip_support/unzip.h:
+/Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/support/zip_support/unzip.h:
 
-/Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/platform/android/CCPlatformDefine.h:
+/Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/platform/android/CCPlatformDefine.h:
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/android/log.h:
 
-/Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/support/zip_support/ioapi.h:
+/Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/support/zip_support/ioapi.h:
 
-/Users/welefen/Develop/mobile/cocos2d-2.1rc0-x-2.1.3/samples/Javascript/CocosDragonJS/proj.android/../../../../cocos2dx/platform/CCPlatformConfig.h:
+/Users/welefen/Develop/mobile/cocos2d-x-2.1.4/samples/Javascript/SetCard/proj.android/../../../../cocos2dx/platform/CCPlatformConfig.h:
 
 /Users/welefen/Develop/mobile/android-ndk-r8c/platforms/android-14/arch-arm/usr/include/errno.h:
 
