@@ -38,7 +38,7 @@ var MainScene = $.scene(function(){
                     open('http://play.google.com/store/apps/details?id=com.weizoo.SetCard');
                     //}catch(e){};
                     //open('http://www.baidu.com')
-                    cc.log("open url");
+                    //cc.log("open url");
                 }],
                 position: [left, 280],
                 marginTop: 20,

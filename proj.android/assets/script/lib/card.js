@@ -29,7 +29,10 @@ var Card = function(){
 			"hard": 60,
 			"expert": 81
 		};
-		var item = items[mode] || 81;
+		var item = (items[mode] || mode) | 0;
+		if (!item) {
+			item = 81;
+		};
 		var total = 81;
 		var nums = Math.ceil(total / item);
 		var result = [];
