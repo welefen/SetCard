@@ -29,7 +29,7 @@ var ListScene = $.scene(function(){
             var local = node.scrollView.convertToNodeSpace(touchLocation);
             var pos = node.scrollView.getPosition();
             var r = cc.rect(pos.x, pos.y, 470, this.getWinSize().height - 150);
-            if (cc.Rect.CCRectContainsPoint(r, local)) {
+            if (cc.rectContainsRect(r, local)) {
                 menuClick = true;
             }else{
                 menuClick = false;
