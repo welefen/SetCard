@@ -34,7 +34,8 @@
         loadExtension:true,
         frameRate:60,
         tag:'gameCanvas', //the dom element to run cocos2d on
-        engineDir:'../../../../Cocos2d-html5-v2.1.4/cocos2d/',
+        //engineDir:'../../../../Cocos2d-html5-v2.1.4/cocos2d/',
+        SingleEngineFile: "../Cocos2d-html5-v2.1.4.min.js",
         appFiles:[
             'cqwrap.js',
             'html5_fixed.js',
