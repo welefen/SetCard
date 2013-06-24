@@ -60,11 +60,13 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ... use paths relative to current directory
-COCOS2DX_ROOT="$DIR/../../../.."
+if [ $COCOS2DX_ROOT == "" ];then
+    COCOS2DX_ROOT="$DIR/../../../.."
+fi
 APP_ROOT="$DIR/.."
 APP_ANDROID_ROOT="$DIR"
 RESROUCE_ROOT="$APP_ROOT/Resources/"
-BINDINGS_JS_ROOT="$APP_ROOT/../../../scripting/javascript/bindings/js"
+BINDINGS_JS_ROOT="$COCOS2DX_ROOT/scripting/javascript/bindings/js"
 
 echo
 echo "Paths"
