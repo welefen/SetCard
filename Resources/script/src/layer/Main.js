@@ -33,10 +33,12 @@ var MainScene = $.scene(function(){
                     cc.Director.getInstance().replaceScene(scene);
                 }, function(){
                     BaseScene.btnClick();
-                    try{
-                        open('https://play.google.com/store/apps/details?id=com.weizoo.SetCard');
-                    }catch(e){};
-                    cc.log("open url");
+                    //try{
+                    //open('market://details?id=com.weizoo.SetCard');
+                    open('http://play.google.com/store/apps/details?id=com.weizoo.SetCard');
+                    //}catch(e){};
+                    //open('http://www.baidu.com')
+                    //cc.log("open url");
                 }],
                 position: [left, 280],
                 marginTop: 20,
