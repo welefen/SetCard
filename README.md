@@ -13,24 +13,29 @@ SetCard是一款基于Cocos2d-html5开发的卡牌消除类游戏，通过javasc
 
 消除时，对于选择的3张卡牌，必须符合对于每个属性，要么3张卡牌的都相同，要么3张卡牌都不相同。如果出现了2张卡牌是相同的属性，但和第三张不相同则不能消除。
 
+游戏共有5种难度，每种有100关，即使是游戏高手也可以玩很久。
+
+关于Set Card游戏更多介绍请见[维基百科](http://en.wikipedia.org/wiki/Set_(game\))
+
 ## 游戏地址
 
 [在线地址](http://set.ueapp.com)
 
-[Android下载地址](https://play.google.com/store/apps/details?id=com.weizoo.SetCard)
+[Android下载地址(Google Play)](https://play.google.com/store/apps/details?id=com.weizoo.SetCard)
 
-由于没有iOS的开发者账号，所以没有发布到iOS上。
+[APK下载](/welefen/SetCard/blob/master/proj.android/bin/SetCard.apk?raw=true)
+
+由于没有iOS的开发者账号，所以没有发布到Apple Store。
 
 ## 游戏截图
 
 
-![set card](screenshot/1.jpg)
-![set card](screenshot/2.jpg)
-![set card](screenshot/3.jpg)
-![set card](screenshot/4.jpg)
-![set card](screenshot/5.jpg)
-![set card](screenshot/6.jpg)
+![set card](screenshot/1.jpg) &nbsp;
+![set card](screenshot/2.jpg) &nbsp;
+![set card](screenshot/3.jpg) &nbsp;
+![set card](screenshot/4.jpg) &nbsp;
+![set card](screenshot/5.jpg) &nbsp;
+![set card](screenshot/6.jpg) &nbsp;
 
-## 游戏实现
 
-游戏实现请见<http://www.welefen.com>
+[by welefen](http://www.welefen.com/)
