@@ -34,4 +34,4 @@ SetCard是一款基于Cocos2d-html5开发的卡牌消除类游戏，通过javasc
 ![set card](screenshot/6.jpg) &nbsp;
 
 
-by welefen
+[by welefen](http://www.welefen.com/)
