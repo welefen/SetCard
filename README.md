@@ -21,7 +21,7 @@ SetCard是一款基于Cocos2d-html5开发的卡牌消除类游戏，通过javasc
 
 [APK下载](/welefen/SetCard/blob/master/proj.android/bin/SetCard.apk?raw=true)
 
-由于没有iOS的开发者账号，所以没有发布到iOS上。
+由于没有iOS的开发者账号，所以没有发布到Apple Store。
 
 ## 游戏截图
 
