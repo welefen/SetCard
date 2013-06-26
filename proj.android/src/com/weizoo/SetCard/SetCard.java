@@ -52,6 +52,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout.LayoutParams;
 
+import com.umeng.analytics.MobclickAgent;
+
 public class SetCard extends Cocos2dxActivity implements CocosMessageInterface{
 	
 	private WebView mWebView;
@@ -60,100 +62,16 @@ public class SetCard extends Cocos2dxActivity implements CocosMessageInterface{
 		super.onCreate(savedInstanceState);
 		
 		CocosMessageDelegate.register(this);
+		MobclickAgent.onError(this);
 	}
-	
-	@SuppressLint("DefaultLocale")
-	public JSONObject getConnectionInfo(JSONObject params){
-		
-        ConnectivityManager conMan = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        
-        //mobile 3G Data Network
-        State mobile = conMan.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
-        //wifi
-        State wifi = conMan.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-        
-        NetworkInfo info = conMan.getActiveNetworkInfo();
-		
-		JSONObject ret = new JSONObject();
-		
-		try {
-			ret.put("mobile", mobile==State.CONNECTED||mobile==State.CONNECTING);
-			ret.put("wifi", wifi==State.CONNECTED||wifi==State.CONNECTING);
-			
-			String typeName = info.getTypeName().toLowerCase(); // WIFI/MOBILE
-            if (typeName.equalsIgnoreCase("wifi")) {
-            	ret.put("type", typeName);
-            } else {
-            	// 3gnet/3gwap/uninet/uniwap/cmnet/cmwap/ctnet/ctwap
-                typeName = info.getExtraInfo().toLowerCase();
-                ret.put("type", typeName);
-            }
-            
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return ret;
+	public void onResume() {
+	    super.onResume();
+	    MobclickAgent.onResume(this);
 	}
-	
-	public JSONObject getDeviceInfo(JSONObject params){
-		final TelephonyManager tm = (TelephonyManager) getBaseContext().getSystemService(Context.TELEPHONY_SERVICE);
-		 
-	    final String tmDevice, tmSerial, androidId;
-	    tmDevice = "" + tm.getDeviceId();
-	    tmSerial = "" + tm.getSimSerialNumber();
-	    androidId = "" + android.provider.Settings.Secure.getString(getContentResolver(), android.provider.Settings.Secure.ANDROID_ID);
-	 
-	    UUID deviceUuid = new UUID(androidId.hashCode(), ((long)tmDevice.hashCode() << 32) | tmSerial.hashCode());
-	    String uniqueId = deviceUuid.toString();	
-	    
-	    JSONObject ret = new JSONObject();
-	    try {
-			ret.put("deviceId", uniqueId);
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	    
-	    return ret;
+	public void onPause() {
+	    super.onPause();
+	    MobclickAgent.onPause(this);
 	}
-	
-	public JSONObject getBatteryInfo(JSONObject params){
-		//得到电池电量
-		Intent batteryInfoIntent = getApplicationContext()  
-				.registerReceiver( null, new IntentFilter( Intent.ACTION_BATTERY_CHANGED ) ) ;
-		
-		int status = batteryInfoIntent.getIntExtra( "status" , 0 );  //BatteryManager.BATTERY_STATUS_CHARGING 为正在充电
-		int health = batteryInfoIntent.getIntExtra( "health" , 1 );  
-		boolean present = batteryInfoIntent.getBooleanExtra( "present" , false );  
-		int level = batteryInfoIntent.getIntExtra( "level" , 0 );  //电池电量等级
-		int scale = batteryInfoIntent.getIntExtra( "scale" , 0 );   //电池满时百分比 = level / scale
-		int plugged = batteryInfoIntent.getIntExtra( "plugged" , 0 );  //电池状态 
-		int voltage = batteryInfoIntent.getIntExtra( "voltage" , 0 );  
-		int temperature = batteryInfoIntent.getIntExtra( "temperature" , 0 ); // 温度的单位是0.1℃  
-		String technology = batteryInfoIntent.getStringExtra( "technology" );  	
-		
-		JSONObject result = new JSONObject();
-		
-		try {	
-			result.put("status", status);
-			result.put("health", health);
-			result.put("present", present);
-			result.put("level", level);
-			result.put("scale", scale);
-			result.put("plugged", plugged);
-			result.put("voltage", voltage);
-			result.put("temperature", temperature);
-			result.put("technology", technology);
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return result;
-	}
-	
 	@Override
 	public void init(){
 		super.init();

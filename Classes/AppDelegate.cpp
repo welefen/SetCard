@@ -44,7 +44,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->setAnimationInterval(1.0 / 20);
     
     std::vector<std::string> searchPaths;
-    searchPaths.push_back("script");
+    searchPaths.push_back("js");
     CCFileUtils::sharedFileUtils()->setSearchPaths(searchPaths);
     
     
