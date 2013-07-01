@@ -1,6 +1,16 @@
 ;(function(){
-    var dirImg = "img/";
-    var dirAudio = "audio/";
+    var isAndroid = navigator.userAgent.indexOf("Android") >= 0;
+    var dirImg = isAndroid ? "img/" : "../img/";
+    var dirAudio = isAndroid ? "audio/" : "../audio/";
+    var lang = "";
+    if (cc.Application.getCurrentLanguage) {
+        lang = cc.Application.getCurrentLanguage();
+    }else if(cc.Application.getInstance().getCurrentLanguage){
+        lang = cc.Application.getInstance().getCurrentLanguage();
+    }
+    if (lang == cc.LANGUAGE_CHINESE) {
+        dirImg = isAndroid ? "img.cn/" : "../img.cn/";
+    };
     /**
      * 资源
      * @type {Object}
