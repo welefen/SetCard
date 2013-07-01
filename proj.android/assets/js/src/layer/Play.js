@@ -328,7 +328,7 @@ var PlayScene = $.scene(function(){
         initCard: function(){
             var instance = this;
             var menu = node.menu = cc.Menu.create();
-            new Array(16).join('*').split('').forEach(function(){
+            cc.createArray(15).forEach(function(){
                 var cardId = Card.getCard();
                 if (cardId === false) {
                     return true;

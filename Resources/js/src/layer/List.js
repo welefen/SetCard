@@ -34,6 +34,7 @@ var ListScene = $.scene(function(){
             }else{
                 menuClick = false;
             }
+            return true;
         },
         registerWithTouchDispatcher:function () {
             cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, -10);

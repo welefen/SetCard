@@ -57,7 +57,9 @@ var Card = function(){
 		if (cardIndex == cardList.length) {
 			return false;
 		};
-		return cardList[cardIndex++];
+		var val =  cardList[cardIndex++];
+		//cc.log((cardIndex-1)+':'+val);
+		return val;
 	}
 	function getInfo(cardId){
 		var x = parseInt(cardId / 27);
