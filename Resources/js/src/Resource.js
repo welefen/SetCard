@@ -1,5 +1,5 @@
 ;(function(){
-    var dirImg = "../img/";
+    var dirImg = "../img.cn/";
     var dirAudio = "../audio/";
     /**
      * 资源
