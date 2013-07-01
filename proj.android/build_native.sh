@@ -101,6 +101,14 @@ rm -rf "$APP_ANDROID_ROOT"/assets/img/num1
 rm -rf "$APP_ANDROID_ROOT"/assets/img/num2
 rm -rf "$APP_ANDROID_ROOT"/assets/img/num3
 
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/icon
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/btn
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/txt
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/num
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/num1
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/num2
+rm -rf "$APP_ANDROID_ROOT"/assets/img.cn/num3
+
 echo "Using prebuilt externals"
 echo
 
