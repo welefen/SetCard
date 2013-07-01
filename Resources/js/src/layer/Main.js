@@ -34,8 +34,8 @@ var MainScene = $.scene(function(){
                 }, function(){
                     BaseScene.btnClick();
                     //try{
-                    //open('market://details?id=com.weizoo.SetCard');
-                    open('http://play.google.com/store/apps/details?id=com.weizoo.SetCard');
+                    open('market://details?id=com.weizoo.SetCard');
+                    //open('http://play.google.com/store/apps/details?id=com.weizoo.SetCard');
                     //}catch(e){};
                     //open('http://www.baidu.com')
                     //cc.log("open url");

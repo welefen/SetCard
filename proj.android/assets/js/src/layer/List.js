@@ -25,6 +25,7 @@ var ListScene = $.scene(function(){
             return true;
         },
         onTouchBegan: function(touch){
+            cc.log("onTouchBegan");
             var touchLocation = touch.getLocation();
             var local = node.scrollView.convertToNodeSpace(touchLocation);
             var pos = node.scrollView.getPosition();
@@ -34,6 +35,7 @@ var ListScene = $.scene(function(){
             }else{
                 menuClick = false;
             }
+            return true;
         },
         registerWithTouchDispatcher:function () {
             cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, -10);

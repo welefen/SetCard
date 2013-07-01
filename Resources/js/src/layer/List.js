@@ -25,6 +25,7 @@ var ListScene = $.scene(function(){
             return true;
         },
         onTouchBegan: function(touch){
+            cc.log("onTouchBegan");
             var touchLocation = touch.getLocation();
             var local = node.scrollView.convertToNodeSpace(touchLocation);
             var pos = node.scrollView.getPosition();
