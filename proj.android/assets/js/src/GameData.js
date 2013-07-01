@@ -11,7 +11,7 @@
     ];
 
     GameData = {
-        version: "v1.3",
+        version: "v1.4",
         data: {
             currentMode: "", //当前的模式
             currentLevel: "", //当前的level
