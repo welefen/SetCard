@@ -145,3 +145,28 @@ $.playEffect = function(name) {
 $.getRandom = function(min, max){
     return min + Math.ceil(Math.random() * (max - min));
 }
+/**
+ * 创建一个label
+ * @param  {[type]} config [description]
+ * @return {[type]}        [description]
+ */
+$.label = function(config){
+	config = cc.mix({
+		name: "",
+		size: 14,
+		left: 0,
+		top: 0,
+		width: 50,
+		height: 24,
+		align: cc.TEXT_ALIGNMENT_CENTER,
+		color: cc.c3b(0, 0, 0)
+	}, config || {}, true);
+
+	var label = cc.LabelTTF.create(config.name, $.default_font, config.size);
+    label.setAnchorPoint(cc.p(0, 0));
+    label.setPosition(cc.p(config.left, config.top));
+    label.setDimensions(cc.size(config.width, config.height))
+    label.setHorizontalAlignment(config.align);
+    label.setColor(config.color);
+    return label;
+}

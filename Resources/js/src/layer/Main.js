@@ -10,6 +10,7 @@ var MainScene = $.scene(function(){
             BaseScene.initBg.call(this);
             this.initLogo();
             this.initMenu();
+            this.initVersion();
             BaseScene.initSoundBtn.call(this, 110, 60);
             $.setBackgroundMusic(R.audio_bg);
             return true;
@@ -52,6 +53,19 @@ var MainScene = $.scene(function(){
                 }
             })
             this.addChild(menu);
+        },
+        initVersion: function(){
+            var version = GameData.version;
+            var winSize = this.getWinSize();
+            var label = $.label({
+                name: version,
+                size: 18,
+                width: 50,
+                top: 10,
+                left: winSize.width - 50, 
+                color: cc.c3b(255, 255, 255)
+            });
+            this.addChild(label);
         }
     }
 })

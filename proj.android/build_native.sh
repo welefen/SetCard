@@ -93,13 +93,13 @@ cp -rf "$RESROUCE_ROOT"/* "$APP_ANDROID_ROOT"/assets
 cp -f "$BINDINGS_JS_ROOT"/*.js "$APP_ANDROID_ROOT"/assets
 
 
-rm -rf "$APP_ANDROID_ROOT"/assets/image/icon
-rm -rf "$APP_ANDROID_ROOT"/assets/image/btn
-rm -rf "$APP_ANDROID_ROOT"/assets/image/txt
-rm -rf "$APP_ANDROID_ROOT"/assets/image/num
-rm -rf "$APP_ANDROID_ROOT"/assets/image/num1
-rm -rf "$APP_ANDROID_ROOT"/assets/image/num2
-rm -rf "$APP_ANDROID_ROOT"/assets/image/num3
+rm -rf "$APP_ANDROID_ROOT"/assets/img/icon
+rm -rf "$APP_ANDROID_ROOT"/assets/img/btn
+rm -rf "$APP_ANDROID_ROOT"/assets/img/txt
+rm -rf "$APP_ANDROID_ROOT"/assets/img/num
+rm -rf "$APP_ANDROID_ROOT"/assets/img/num1
+rm -rf "$APP_ANDROID_ROOT"/assets/img/num2
+rm -rf "$APP_ANDROID_ROOT"/assets/img/num3
 
 echo "Using prebuilt externals"
 echo
